@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envelop with Background Images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('images/picture\ q].jpg');
+          background-size: 100% auto; /* Adjusts the background image width to cover the entire width of the body and automatically adjusts the height to maintain the aspect ratio */
+            background-repeat: no-repeat; /* Prevents the background image from repeating */
+            background-position: center; /* Centers the background image within the body */
+            margin: 0; /* Removes default body margin */
+            padding: 0; /* Removes default body padding */
+            height: 100vh; /* Sets the height of the body to 100% of the viewport height */
+        }
+        </style>
+    <div class="wrapper">
+        <div class="lid one"></div>
+        <div class="lid two"></div>
+        <div class="envelope"></div>
+        <div class="letter">
+            <p> Hi Wifey <br>sorry na po <br>mwa!!! </p>
+        </div>
+    </div>
+    <button>Click me!</button>
+    <script>
+        const audio = new Audio("kk.mp3");
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    audio.play();
+  });
+});
+    </script>
+</body>
+</html>
